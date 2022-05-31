@@ -7,8 +7,8 @@ const handle = (str) => {
   let resultLines = lines.map(line => {
     let tokens = line.split("/")
 
-    let result = tokens[2].replace("www.", "")
-    return result
+    let result = tokens[2]?.replace("www.", "")
+    return result? result: ""
   })
 
   return resultLines.join("\n")

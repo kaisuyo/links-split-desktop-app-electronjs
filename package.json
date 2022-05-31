@@ -2,7 +2,8 @@
   "name": "myb-app",
   "productName": "myb-app",
   "version": "1.0.0",
-  "main": "src/index.js",
+  "description": "app created by nguyen dang bac",
+  "main": "src/electron.js",
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
@@ -17,12 +18,12 @@
       "target": [
         "nsis"
       ],
-      "icon": "src/icon.jpg",
+      "icon": "src/icon.ico",
       "requestedExecutionLevel": "requireAdministrator"
     },
     "nsis": {
-      "installerIcon": "src/icon.jpg",
-      "uninstallerIcon": "src/icon.jpg",
+      "installerIcon": "src/icon.ico",
+      "uninstallerIcon": "src/icon.ico",
       "uninstallDisplayName": "myb-app",
       "license": "license.txt",
       "oneClick": false,
@@ -63,10 +64,11 @@
     }
   },
   "dependencies": {
-    "electron-builder": "^23.0.3",
-    "electron-squirrel-startup": "^1.0.0"
+    "electron-squirrel-startup": "^1.0.0",
+    "yarn": "^1.22.18"
   },
   "devDependencies": {
+    "electron-builder": "^23.0.3",
     "@electron-forge/cli": "^6.0.0-beta.63",
     "@electron-forge/maker-deb": "^6.0.0-beta.63",
     "@electron-forge/maker-rpm": "^6.0.0-beta.63",
